@@ -32,6 +32,51 @@
     </div>
 </div>
 
+{{#if methods}}
+<div id="classes" class="sidebox">
+    <div class="hd">
+        <h2 class="no-toc">Methods On Page</h2>
+    </div>
+    <div class="bd">
+        <ul>
+            {{#methods}}
+                <li><a href="#method_{{name}}">{{name}}</a></li>
+            {{/methods}}
+        </ul>
+    </div>
+</div>
+{{/if}}
+
+{{#if events}}
+<div id="classes" class="sidebox">
+    <div class="hd">
+        <h2 class="no-toc">Events On Page</h2>
+    </div>
+    <div class="bd">
+        <ul>
+            {{#events}}
+                <li><a href="#event_{{name}}">{{name}}</a></li>
+            {{/events}}
+        </ul>
+    </div>
+</div>
+{{/if}}
+
+{{#if props}}
+<div id="classes" class="sidebox">
+    <div class="hd">
+        <h2 class="no-toc">Props On Page</h2>
+    </div>
+    <div class="bd">
+        <ul>
+            {{#events}}
+                <li><a href="#prop_{{name}}">{{name}}</a></li>
+            {{/events}}
+        </ul>
+    </div>
+</div>
+{{/if}}
+
 {{#if fileTree}}
 <div id="fileTree" class="sidebox">
     <div class="hd">
