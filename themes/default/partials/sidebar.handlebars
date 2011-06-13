@@ -33,14 +33,14 @@
 </div>
 
 {{#if methods}}
-<div id="classes" class="sidebox">
+<div id="methods-on-page" class="sidebox on-page">
     <div class="hd">
         <h2 class="no-toc">Methods On Page</h2>
     </div>
     <div class="bd">
         <ul>
             {{#methods}}
-                <li><a href="#method_{{name}}">{{name}}</a></li>
+                <li><a href="#methods_{{name}}">{{name}}</a></li>
             {{/methods}}
         </ul>
     </div>
@@ -48,14 +48,14 @@
 {{/if}}
 
 {{#if events}}
-<div id="classes" class="sidebox">
+<div id="events-on-page" class="sidebox on-page">
     <div class="hd">
         <h2 class="no-toc">Events On Page</h2>
     </div>
     <div class="bd">
         <ul>
             {{#events}}
-                <li><a href="#event_{{name}}">{{name}}</a></li>
+                <li><a href="#events_{{name}}">{{name}}</a></li>
             {{/events}}
         </ul>
     </div>
@@ -63,14 +63,29 @@
 {{/if}}
 
 {{#if props}}
-<div id="classes" class="sidebox">
+<div id="props-on-page" class="sidebox">
     <div class="hd">
         <h2 class="no-toc">Props On Page</h2>
     </div>
     <div class="bd">
         <ul>
             {{#events}}
-                <li><a href="#prop_{{name}}">{{name}}</a></li>
+                <li><a href="#props_{{name}}">{{name}}</a></li>
+            {{/events}}
+        </ul>
+    </div>
+</div>
+{{/if}}
+
+{{#if attributes}}
+<div id="attrs-on-page" class="sidebox on-page">
+    <div class="hd">
+        <h2 class="no-toc">Attributes On Page</h2>
+    </div>
+    <div class="bd">
+        <ul>
+            {{#events}}
+                <li><a href="#attrs_{{name}}">{{name}}</a></li>
             {{/events}}
         </ul>
     </div>
