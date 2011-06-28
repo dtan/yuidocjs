@@ -32,6 +32,66 @@
     </div>
 </div>
 
+{{#if methods}}
+<div id="methods-on-page" class="sidebox on-page">
+    <div class="hd">
+        <h2 class="no-toc">Methods On Page</h2>
+    </div>
+    <div class="bd">
+        <ul>
+            {{#methods}}
+                <li><a href="#methods_{{name}}">{{name}}</a></li>
+            {{/methods}}
+        </ul>
+    </div>
+</div>
+{{/if}}
+
+{{#if events}}
+<div id="events-on-page" class="sidebox on-page">
+    <div class="hd">
+        <h2 class="no-toc">Events On Page</h2>
+    </div>
+    <div class="bd">
+        <ul>
+            {{#events}}
+                <li><a href="#events_{{name}}">{{name}}</a></li>
+            {{/events}}
+        </ul>
+    </div>
+</div>
+{{/if}}
+
+{{#if properties}}
+<div id="props-on-page" class="sidebox on-page">
+    <div class="hd">
+        <h2 class="no-toc">Properties On Page</h2>
+    </div>
+    <div class="bd">
+        <ul>
+            {{#properties}}
+                <li><a href="#props_{{name}}">{{name}}</a></li>
+            {{/properties}}
+        </ul>
+    </div>
+</div>
+{{/if}}
+
+{{#if attrs}}
+<div id="attrs-on-page" class="sidebox on-page">
+    <div class="hd">
+        <h2 class="no-toc">Attributes On Page</h2>
+    </div>
+    <div class="bd">
+        <ul>
+            {{#attrs}}
+                <li><a href="#attrs_{{name}}">{{name}}</a></li>
+            {{/attrs}}
+        </ul>
+    </div>
+</div>
+{{/if}}
+
 {{#if fileTree}}
 <div id="fileTree" class="sidebox">
     <div class="hd">
@@ -42,4 +102,10 @@
     </div>
 </div>
 {{/if}}
+
+<div id="back-to-top" class="sidebox">
+	<div class="hd">
+	    <h2 class="no-toc"><a href="#">Back to top</a></h2>
+	</div>
+</div>
 
